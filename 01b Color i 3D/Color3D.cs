@@ -46,6 +46,7 @@ public struct Color3D
     // Override metod
     public override string ToString()
     {
-        return string.Format("R = {0}, G = {1}, B = {2}", R, G, B);
+        //return string.Format("R = {0}, G = {1}, B = {2}", R, G, B);
+        return string.Format("{0}, {1}, {2}", R, G, B);
     }
 }

@@ -40,8 +40,13 @@ palett.Remove(röd);
 
 Console.WriteLine("\nFärger i paletten: (antal: {0})\n{1}", palett.Count, palett);
 
+// Spara färger till en fil
+PaletteStorage.Save(palett, "../../../output.txt");
 
-
+// Hämta från fil till en ny Palette:
+palett.Clear();
+palett = PaletteStorage.Load("../../../input.txt");
+Console.WriteLine("\nEfter inläsning:\nFärger i paletten: (antal: {0})\n{1}", palett.Count, palett);
 
 
 Console.Write("\n\nTryck på en tangent");
